@@ -14,10 +14,13 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #d1c7bd;
+	background-color: #ebe3db;
 }
 
 header {
+    position:-webkit-sticky; 
+    position:sticky; 
+    top:0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -31,9 +34,11 @@ header {
 .logo {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 	width: 100px;
 	height: 50px;
-	padding: 5px 15px;
+	padding: 5px;
 }
 
 .logo-text {
@@ -118,5 +123,35 @@ header {
 	justify-content: center;
 	width: 90%;
 	height: 100vh;
-	background-color: #ebe3db;
+	background-color: #d1c7bd;
+}
+
+h2{
+    text-align: center;
+    text-shadow: 2px 2px #ebe3db;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 425px) {
+    header{
+        justify-content: space-around;
+    }
+	.logo-text{
+	    font-size: 14px;
+	}
+	
+	.social a{
+    font-size: 14px;
+	}
+	
+	.main-menu{
+	    width: 130px;
+	}
+	
+	.menu-item a{
+	    width: 70%;
+	    font-size: 11px;
+	    margin-right: 3px;
+	}
 }
