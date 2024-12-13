@@ -40,15 +40,16 @@
 .about {
 	display: flex;
 	flex-direction: row;
-
 	width: 90%;
-	min-width: 100vh;
+	min-width: 200px;
+	height: 200px;
 }
 
 .about-me {
 	flex: 1;
 	width: 400px;
-	height: 100px;
+	border-bottom: 1px solid #3a2d28;
+	border-radius: 0 0 20px 0;
 }
 
 h2 {
@@ -61,7 +62,8 @@ h2 {
 .about-my-skill {
 	flex: 1;
 	width: 400px;
-	height: 100px;
+	border-top: 1px solid #3a2d28;
+	border-radius: 20px 0 0 0;
 }
 
 .about-my-skill h3 {
