@@ -82,25 +82,4 @@ h2 {
 	font-size: 32px;
 }
 
-@media (max-width: 425px) {
-	header {
-		justify-content: space-around;
-	}
-	.logo-text {
-		font-size: 14px;
-	}
 
-	.social a {
-		font-size: 14px;
-	}
-
-	.main-menu {
-		width: 130px;
-	}
-
-	.menu-item a {
-		width: 70%;
-		font-size: 11px;
-		margin-right: 3px;
-	}
-}
