@@ -33,7 +33,6 @@
 	width: 90%;
 	height: 100vh;
 	margin-top: 1px;
-	background-color: #d1c7bd;
 	z-index: 1;
 }
 
@@ -52,9 +51,10 @@
 	align-items: center;
 	justify-content: center;
 	width: 400px;
-	border-top: 1px solid #3a2d28;
-	border-bottom: 1px solid #3a2d28;
+	border-top: 1px solid #ff8d21;
+	border-bottom: 1px solid #ff8d21;
 	border-radius: 20px 0 20px 0;
+	background-color: #d1c7bd;
 }
 
 .about-me h2 {
@@ -66,14 +66,16 @@
 
 .about-me p {
     letter-spacing: 1.3px;
+		margin: 0 8px;
 }
 
 .about-my-skill {
 	flex: 1;
 	width: 400px;
-	border-top: 1px solid #3a2d28;
-	border-bottom: 1px solid #3a2d28;
+	border-top: 1px solid #ff8d21;
+	border-bottom: 1px solid #ff8d21;
 	border-radius: 20px 0 20px 0;
+	background-color: #d1c7bd;
 }
 
 .about-my-skill h3 {
@@ -127,8 +129,8 @@
     align-content: center;
     justify-content: center;
     position: -webkit-sticky;
-	position: sticky;
-	bottom: 0;
+		position: sticky;
+		bottom: 0;
     width: 30px;
     height: 30px;
 }
@@ -139,6 +141,13 @@
     border-right: 3px solid #3a2d28;
     border-bottom: 3px solid #3a2d28;
     transform: rotate(45deg);
+}
+
+.next-pointer:hover{
+		background-color: #266ca9;
+		border-right: 3px solid #ffb703;
+    border-bottom: 3px solid #ffb703;
+		transition: all 0.5s cubic-bezier(0, 0, 1, 1);
 }
 
 @media (max-width: 900px) {
