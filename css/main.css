@@ -150,6 +150,17 @@
 		transition: all 0.5s cubic-bezier(0, 0, 1, 1);
 }
 
+.contact{
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	border-top: 1px solid #ff8d21;
+	border-bottom: 1px solid #ff8d21;
+	border-radius: 20px 0 20px 0;
+	background-color: #d1c7bd;
+}
+
 @media (max-width: 900px) {
     .about{
         flex-direction: column;
