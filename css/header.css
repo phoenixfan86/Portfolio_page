@@ -159,7 +159,13 @@ header {
     transform: rotate(45deg) translate(0, 50%);
 }
 
-
+@media (max-width: 480px){
+	header {
+		 width: 100%;
+			margin-bottom: 15px;
+			justify-content: space-around;
+	}
+}
 
 @media (max-width: 900px) {
 	header {
