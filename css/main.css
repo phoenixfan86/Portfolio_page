@@ -8,6 +8,21 @@
 }
 
 .bg {
+	background-image: linear-gradient(
+		to right top,
+		#9568e0,
+		#7374e2,
+		#517ce0,
+		#2d82d8,
+		#0086cd,
+		#008ecb,
+		#0095c8,
+		#009cc3,
+		#00aac7,
+		#00b8c6,
+		#00c5c0,
+		#1ad1b6
+	);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -31,7 +46,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: start;
-	width: 90%;
+	width: 600px;
 	height: 100vh;
 	z-index: 1;
 }
@@ -49,34 +64,48 @@
 
 .about-me {
 	flex: 1;
+	margin-top: 95px;
 	align-items: center;
 	justify-content: center;
-	width: 400px;
-	border-top: 1px solid #ff8d21;
-	border-bottom: 1px solid #ff8d21;
-	border-radius: 20px 0 20px 0;
-	background-color: #d1c7bd;
+	width: 100%;
+	min-height: 250px;
+	border-radius: 20px 5px 20px 5px;
+	background-color: #0081cf;
+	background: inherit;
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+}
+
+.about-me:hover {
+	border-top: 1px solid #0089ba;
+	border-bottom: 1px solid #0089ba;
+	transition: opacity 2s cubic-bezier(0, 0, 1, 1);
 }
 
 .about-me h2 {
 	text-align: center;
+	color: #4b4453;
 	text-shadow: 2px 2px #ebe3db;
 	font-size: 32px;
-	margin-bottom: 25px;
+	margin: 25px 0;
 }
 
 .about-me p {
 	letter-spacing: 1.3px;
-	margin: 0 8px;
+	padding: 0 20px 20px 20px;
 }
 
 .about-my-skill {
 	flex: 1;
-	width: 400px;
-	border-top: 1px solid #ff8d21;
-	border-bottom: 1px solid #ff8d21;
-	border-radius: 20px 0 20px 0;
+	width: 100%;
+	min-height: 200px;
+	border-radius: 20px 5px 20px 5px;
 	background-color: #d1c7bd;
+	background: inherit;
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
 }
 
 /*.about-my-skill*/
@@ -98,7 +127,8 @@ h3 {
 }
 
 .about-my-skill li {
-	width: 100%;
+	width: 60px;
+	height: 60px;
 	margin-right: 10px;
 	padding: 10px;
 	font-size: 36px;
@@ -106,7 +136,8 @@ h3 {
 }
 
 .about-my-skill li:hover {
-	font-size: 40px;
+	/*font-size: 40px;*/
+	transform: scale(1.2);
 	text-shadow: 1px 1px 3px #ddd;
 	transition: font-size 0.3s cubic-bezier(0, 0, 1, 1);
 	border-bottom: 1px solid #3a2d28;
@@ -154,14 +185,18 @@ h3 {
 
 .contact {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 400px;
+	width: 100%;
 	min-height: 400px;
-	border-top: 1px solid #ff8d21;
-	border-bottom: 1px solid #ff8d21;
-	border-radius: 20px 0 20px 0;
+	padding: 10px;
+	border-radius: 20px 5px 20px 5px;
 	background-color: #d1c7bd;
+	background: inherit;
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
 }
 
 .contact-form {
