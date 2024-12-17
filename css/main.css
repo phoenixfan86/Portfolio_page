@@ -47,7 +47,7 @@
 	align-items: center;
 	justify-content: start;
 	margin-top: 5px;
-	width: 100%;
+	width: 80%;
 	height: 100vh;
 	z-index: 1;
 }
@@ -320,6 +320,10 @@ h3 {
 }
 
 @media (max-width: 900px) {
+	.container {
+		width: 90%;
+	}
+
 	.about {
 		flex-direction: column;
 	}
@@ -353,5 +357,9 @@ h3 {
 		min-height: 500px;
 		margin: 10px 0;
 		padding: 10px 2px;
+	}
+
+	.contact-form {
+		width: 80%;
 	}
 }
