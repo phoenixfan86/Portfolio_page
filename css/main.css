@@ -46,7 +46,8 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: start;
-	width: 600px;
+	margin-top: 5px;
+	width: 100%;
 	height: 100vh;
 	z-index: 1;
 }
@@ -57,18 +58,14 @@
 	align-items: center;
 	justify-content: center;
 	gap: 30px;
-	width: 100%;
-	height: 100vh;
-	margin: 30px 10px;
 }
 
 .about-me {
 	flex: 1;
-	margin-top: 95px;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	min-height: 250px;
+	min-height: 450px;
 	border-radius: 20px 5px 20px 5px;
 	background-color: #0081cf;
 	background: inherit;
@@ -86,7 +83,7 @@
 .about-me h2 {
 	text-align: center;
 	color: #4b4453;
-	text-shadow: 2px 2px #ebe3db;
+	text-shadow: 1px 1px #ebe3db;
 	font-size: 32px;
 	margin: 25px 0;
 }
@@ -111,8 +108,9 @@
 /*.about-my-skill*/
 h3 {
 	text-align: center;
-	text-shadow: 2px 2px #ebe3db;
+	text-shadow: 1px 1px #ebe3db;
 	font-size: 32px;
+	color: #4b4453;
 	margin: 15px 0;
 }
 
@@ -136,7 +134,6 @@ h3 {
 }
 
 .about-my-skill li:hover {
-	/*font-size: 40px;*/
 	transform: scale(1.2);
 	text-shadow: 1px 1px 3px #ddd;
 	transition: font-size 0.3s cubic-bezier(0, 0, 1, 1);
@@ -207,32 +204,60 @@ h3 {
 	justify-content: center;
 	width: 95%;
 	height: 95%;
-	border: 1px solid #3a2d28;
-	border-radius: 20px 0 20px 0;
+	border: 1px solid #1ad1b6;
+	border-radius: 20px 5px 20px 5px;
 }
 
 .name,
 .email {
 	width: 95%;
+	border: 1px solid #1ad1b6;
+	border-radius: 5px;
+	padding: 5px;
+	background: inherit;
+
+}
+
+.name::placeholder, .email::placeholder{
+    color: #ddd;
 }
 
 .text-area {
+    position: relative;
 	width: 95%;
 	height: 150px;
+	color: #ddd;
+	border: 1px solid #1ad1b6;
+	border-radius: 5px;
+	padding: 5px;
+	background: inherit;
+}
+
+.text-area>label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.text-area:focus::placeholder{
+    position: fixed;
+    top: -15px;
+}
+
+.text-area::placeholder{
+    color: #ddd;
+    padding: 5px;
 }
 
 @media (max-width: 900px) {
 	.about {
-		margin-top: 95px;
 		flex-direction: column;
-		height: 90vh;
 	}
 
 	.about-me {
 		flex: 1;
 		width: 100%;
-		min-height: 300px;
-		margin: 10px 0;
+		min-height: 350px;
 		padding: 10px 2px;
 	}
 
@@ -254,9 +279,8 @@ h3 {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		flex-direction: row;
 		width: 100%;
-		min-height: 300px;
+		min-height: 500px;
 		margin: 10px 0;
 		padding: 10px 2px;
 	}
