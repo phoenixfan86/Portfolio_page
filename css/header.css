@@ -194,7 +194,7 @@ header {
 	    flex-direction: column;
 	    justify-content: flex-start;
 	    position: fixed;
-	    width: 70%;
+	    width: 30%;
 	    min-height: 200px;
 	    border-radius: 0 0 15px 15px;
 	    top: 60px; right: 0;
