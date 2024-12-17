@@ -199,7 +199,7 @@ h3 {
 .contact-form {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 20px;
 	align-items: center;
 	justify-content: center;
 	width: 95%;
@@ -208,45 +208,72 @@ h3 {
 	border-radius: 20px 5px 20px 5px;
 }
 
-.name,
-.email {
-	width: 95%;
+.input-name {
+	position: relative;
+	width: 50%;
+	padding: 10px;
+	background: inherit;
+	outline: none;
+}
+
+.input-name .name {
+	width: 100%;
+	height: 30px;
+	background: inherit;
 	border: 1px solid #1ad1b6;
 	border-radius: 5px;
-	padding: 5px;
+	outline: none;
+}
+
+.input-email {
+	position: relative;
+	width: 50%;
+	padding: 10px;
+}
+
+.input-email .email {
+	width: 100%;
+	height: 30px;
 	background: inherit;
-
-}
-
-.name::placeholder, .email::placeholder{
-    color: #ddd;
-}
-
-.text-area {
-    position: relative;
-	width: 95%;
-	height: 150px;
-	color: #ddd;
 	border: 1px solid #1ad1b6;
 	border-radius: 5px;
-	padding: 5px;
+	outline: none;
+}
+
+.input-name label,
+.input-email label,
+.input-text label {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	pointer-events: none;
+	transition: 0.3s ease;
+}
+
+.input-text {
+	position: relative;
+	width: 75%;
+	border-radius: 5px;
 	background: inherit;
 }
 
-.text-area>label{
-    position: absolute;
-    top: 10px;
-    left: 10px;
+.input-text textarea {
+	width: 100%;
+	height: 200px;
+	padding: 10px;
+	background: inherit;
+	border: 1px solid #1ad1b6;
+	border-radius: 5px;
+	outline: none;
+	resize: none;
 }
 
-.text-area:focus::placeholder{
-    position: fixed;
-    top: -15px;
-}
-
-.text-area::placeholder{
-    color: #ddd;
-    padding: 5px;
+.name:focus + label,
+.email:focus + label,
+.text-area:focus + label {
+	top: -14px;
+	left: 10px;
+	font-size: 12px;
 }
 
 @media (max-width: 900px) {

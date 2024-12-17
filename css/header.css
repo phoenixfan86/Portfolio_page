@@ -128,7 +128,7 @@ header {
 .burger-menu span{
     width: 80%;
     height: 2px;
-    transform: scalw(1);
+    transform: scale(1);
     background-color: #d1c7bd;
 }
 
@@ -196,14 +196,12 @@ header {
 	    position: fixed;
 	    width: 70%;
 	    min-height: 200px;
-	    border-top: 1px solid #;
 	    border-radius: 0 0 15px 15px;
 	    top: 60px; right: 0;
-	    z-index: 20;
+	    z-index: 50;
 	    overflow-y: auto;
 	    padding: 50px 10px;
-	    background-color: #0089ba;
-	    background: inherit;
+			background-color: #0089ba;
 	    animation: burgerAnimation .8s;
 	    backdrop-filter: blur(50px);
 	    box-shadow: 0 1px 1rem 0 rgba(255, 255, 255, 0.2);
@@ -223,7 +221,7 @@ header {
 	.menu-item a {
 	    flex-direction: column;
 	    width: 100%;
-	    height: ;100%
+	    height: 100%;
 	    row-gap: 30px;
 		font-size: 14px;
 	}

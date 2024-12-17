@@ -62,27 +62,18 @@
 					<div class="contact">
 						<h3>Contact me</h3>
 						<div class="contact-form">
-							<input
-								type="text"
-								id="name"
-								value=""
-								placeholder="Enter you name"
-								class="name"
-							/>
-							<input
-								type="email"
-								name=""
-								id="email"
-								value=""
-								placeholder="Enter email"
-								class="email"
-							/>
-							<textarea
-								name=""
-								id="textarea"
-								class="text-area"
-							></textarea>
-							<label for="text-area">Enter you text here</label>
+							<div class="input-name">
+								<input type="text" id="name" value="" class="name" />
+								<label for="name">Enter you name</label>
+							</div>
+							<div class="input-email">
+								<input type="email" name="" id="email" value="" class="email" />
+								<label for="email">Enter you email</label>
+							</div>
+							<div class="input-text">
+								<textarea name="" id="textarea" class="text-area"></textarea>
+								<label for="textarea">Enter you text here</label>
+							</div>
 							<button type="submit" id="sumbit-btn">Send Email</button>
 						</div>
 					</div>
