@@ -207,6 +207,8 @@ h3 {
 	transition: opacity 2s cubic-bezier(0, 0, 1, 1);
 }
 
+/* style for contact form */
+
 .contact-form {
 	display: flex;
 	flex-direction: column;
@@ -220,8 +222,6 @@ h3 {
 	border: 1px solid #1ad1b6;
 	border-radius: 20px 5px 20px 5px;
 }
-
-/* style for contact form */
 
 .input-name {
 	position: relative;
