@@ -202,11 +202,15 @@ h3 {
 	gap: 20px;
 	align-items: center;
 	justify-content: center;
+	margin: 20px;
+	padding: 20px;
 	width: 95%;
 	height: 95%;
 	border: 1px solid #1ad1b6;
 	border-radius: 20px 5px 20px 5px;
 }
+
+/* style for contact form */
 
 .input-name {
 	position: relative;
@@ -273,7 +277,18 @@ h3 {
 .text-area:focus + label {
 	top: -14px;
 	left: 10px;
-	font-size: 12px;
+	font-size: 13px;
+	color: #ddd;
+}
+
+.send-btn {
+	width: 120px;
+	font-size: 16px;
+	background-color: #266ca9;
+	border-radius: 10px;
+	color: #ddd;
+	margin: 10px;
+	padding: 10px;
 }
 
 @media (max-width: 900px) {
