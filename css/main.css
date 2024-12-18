@@ -160,14 +160,16 @@ h3 {
 }
 
 .next-btn {
-	display: none;
+	display: flex;
 	align-content: center;
 	justify-content: center;
 	position: -webkit-sticky;
-	position: sticky;
-	bottom: 0;
-	width: 30px;
-	height: 30px;
+	position: fixed;
+	bottom: 20px;
+	right: 25px;
+	width: 40px;
+	height: 40px;
+	opacity: 0.5;
 }
 
 .next-pointer {
@@ -175,7 +177,23 @@ h3 {
 	height: 50%;
 	border-right: 3px solid #3a2d28;
 	border-bottom: 3px solid #3a2d28;
-	transform: rotate(45deg);
+	transform: rotate(-135deg);
+}
+
+.next-pointer p {
+	margin: 2px;
+	text-align: center;
+	font-size: 9px;
+	transform: rotate(135deg);
+}
+
+.next-pointer a {
+	color: #ddd;
+	text-decoration: none;
+}
+
+.next-btn:hover {
+	opacity: 1;
 }
 
 .next-pointer:hover {
@@ -207,8 +225,8 @@ h3 {
 	transition: opacity 2s cubic-bezier(0, 0, 1, 1);
 }
 
-.contact p{
-    text-align: center;
+.contact p {
+	text-align: center;
 }
 
 /* style for contact form */
@@ -291,7 +309,8 @@ h3 {
 .name:not(:placeholder-shown) ~ label,
 .email:focus ~ label,
 .email:not(:placeholder-shown) ~ label,
-.text-area:focus ~ label , .text-area:not(:placeholder-shown) ~ label{
+.text-area:focus ~ label,
+.text-area:not(:placeholder-shown) ~ label {
 	top: -14px;
 	left: 10px;
 	font-size: 11px;
@@ -369,14 +388,14 @@ h3 {
 		width: 80%;
 		font-size: 11px;
 	}
-	
-	
-	.input-name, .input-email, .input-text {
-	    width: 90%;
+
+	.input-name,
+	.input-email,
+	.input-text {
+		width: 90%;
 	}
-	
-	.name .email{
-	    width: 100%;
+
+	.name .email {
+		width: 100%;
 	}
-	
 }
