@@ -160,7 +160,7 @@ h3 {
 }
 
 .next-btn {
-	display: flex;
+	display: none;
 	align-content: center;
 	justify-content: center;
 	position: -webkit-sticky;
@@ -205,6 +205,10 @@ h3 {
 	border-top: 1px solid #0089ba;
 	border-bottom: 1px solid #0089ba;
 	transition: opacity 2s cubic-bezier(0, 0, 1, 1);
+}
+
+.contact p{
+    text-align: center;
 }
 
 /* style for contact form */
@@ -283,12 +287,14 @@ h3 {
 	resize: none;
 }
 
-.name:focus + label,
-.email:focus + label,
-.text-area:focus + label {
+.name:focus ~ label,
+.name:not(:placeholder-shown) ~ label,
+.email:focus ~ label,
+.email:not(:placeholder-shown) ~ label,
+.text-area:focus ~ label , .text-area:not(:placeholder-shown) ~ label{
 	top: -14px;
 	left: 10px;
-	font-size: 13px;
+	font-size: 11px;
 	color: #ddd;
 }
 
@@ -361,5 +367,16 @@ h3 {
 
 	.contact-form {
 		width: 80%;
+		font-size: 11px;
 	}
+	
+	
+	.input-name, .input-email, .input-text {
+	    width: 90%;
+	}
+	
+	.name .email{
+	    width: 100%;
+	}
+	
 }
